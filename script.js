@@ -51,11 +51,11 @@ function updateStatus() {
 		if(response_status == wifi_down){
 			barbaraStatusText.innerText = "Not Connected to Wifi!";
 		} else if(response_status == barbara_down) {
-			barbaraStatusText.innerText = "Barbara is DOWN";
+			barbaraStatusText.innerText = "Barbara is OFFLINE";
 		} else if(response_status == barbara_up) {
-			barbaraStatusText.innerText = "Barbara is UP";
+			barbaraStatusText.innerText = "Barbara is ONLINE";
 		} else {
-			barbaraStatusText.innerText = `An Error Has Occured, Send This to JCWYT For Troubleshooting: {${response_status[0]}, ${response_status[1]}, ${response_status[2]}}`;
+			barbaraStatusText.innerText = `An error has occured fetching bot status, send the following code to us at bugs@jcwyt.com for troubleshooting: {${response_status[0]}, ${response_status[1]}, ${response_status[2]}}`;
 		}
 	}
 }
