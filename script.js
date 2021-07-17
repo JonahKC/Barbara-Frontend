@@ -1,3 +1,4 @@
+/* status:
 var barbaraStatusText = document.getElementById('barbara-up');
 var p = new Ping({timeout: '1000'});
 var bp = new Ping({
