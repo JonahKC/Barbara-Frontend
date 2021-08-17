@@ -25,23 +25,31 @@
     <div class="center">
       <h1>All Commands</h1>
       <hr class="wideline">
-        <h2>User Commands</h2>
-          <h3>The following commands work for all users.</h3>
-          <h4>%help - Displays all commands.</h4>
-          <h4>%secret - Responds with a secret.</h4>
-          <h4>%pickup - Responds with a pickup line.</h4>
-          <h4>%link - Displays a customizable link, and a link to the JCWYT website.</h4>
+        <h2>User Commands: The following commands work for all users.</h2>
+				<ul>
+          <li>%help - Displays all commands. (Usually more up-to-date than the website)</li>
+					<li>%help admin - Displays all admin commands. (Usually more up-to-date than the website)</li>
+          <li>%secret - Responds with a secret. There's multiple "flavors" of secret (lists to draw random messages from). The default one is fairly small and contains old-lady-themed secrets, one called botwinkle which is also fairly small and contains moose-related things, and one called JokesOnYouBot which contains the largest number of messages by far, with 200+, this one is non-curated and many of them are totally random and out-of-context. All of this is configurable through %config (see admin commands)</li>
+          <li>%pickup - Responds with a random pickup line from a hand-curated list of over 100.</li>
+					<li>%invite - Invite Barbara to your Discord Server!</li>
+          <li>%link - Displays a customizable link, and a link to the JCWYT website.</li>
+				</ul>
       <hr class="wideline">
-        <a id="admin"><h2>Admin Commands</h2></a>
-          <h3>The following commands only work for server owners and people they allow.</h3>
-          <h4>%admin list roles - Lists roles that can use admin commands.</h4>
-          <h4>%admin list users - Lists users that can use admin commands.</h4>
-          <h4>%admin add role [@role] - Adds role to admin command whitelist.</h4>
-          <h4>%admin add user [@user] - Adds user to admin command whitelist.</h4>
-          <h4>%admin remove role [@role] - Removes role from admin command whitelist.</h4>
-          <h4>%admin remove user [@user] - Removes user from admin command whitelist.</h4>
-          <h4>%link set [message or link] - Customizes the link in %link. Add as many as you want.</h4>
-          <h4>%prefix [new prefix] - Customize the prefix for all commands from % to whatever you want.</h4>
+        <a id="admin"><h2>Admin Commands. The following commands only work for server owners and people they allow (and the JCWYT team 😉).</h2></a>
+				<ul>
+          <li>%admin list roles - Lists roles that can use admin commands.</li>
+          <li>%admin list users - Lists users that can use admin commands.</li>
+          <li>%admin add role [@role] - Adds role to admin command whitelist.</li>
+          <li>%admin add user [@user] - Adds user to admin command whitelist.</li>
+          <li>%admin remove role [@role] - Removes role from admin command whitelist.</li>
+          <li>%admin remove user [@user] - Removes user from admin command whitelist.</li>
+					<h3>Config commands:<h3>
+          <li>%link set [message or link] - Customizes the link in %link. Add as many as you want.</li>
+          <li>%prefix [new prefix] - Customize the prefix for all commands.</li>
+					<li>%config read - Reads the config as a JSON object. Currently, there aren't commands for many config values, so you'll have so look here to see them all.</li>
+					<li>%config set [parameter] [value] - Set a parameter in config to the value you stated.</li>
+				</ul>
+
     </div>
     <hr class="phonespace">
 	</body>
