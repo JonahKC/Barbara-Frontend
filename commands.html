@@ -28,27 +28,33 @@
         <h2>User Commands</h2>
 				<h3>The following commands work for all users.</h3>
 				<p>
-          %help - Displays all commands.
+          %help – Displays all commands. An alias for this command is %h.
 					<br><br>
-					%help admin - Displays all admin commands. (<a href="#admin">See below</a>)
+					%help admin – Displays all admin commands (<a href="#admin">see below</a>). An alias is %h admin.
 					<br><br>
-          %secret - Responds with a secret. There's currently 300+ secrets, all made by JCWYT!
+          %secret – Responds with a secret. There's currently 300+ secrets, all made by JCWYT!
 					<br><br>
-          %pickup - Responds with a random pickup line from a hand-curated list of over 100.
+          %pickup – Responds with a random pickup line from a hand-curated list of 300+.
 					<br><br>
-					%fact - Returns a random fact, but can only be run once every 10 minutes. This command uses an API, <a href="#api-credits">see below</a> for credit links.
+					%fact – Returns a random fact, but can only be run once every 10 minutes. This command uses an API, <a href="#api-credits">see below</a> for credit links.
 					<br><br>
-					%dadjoke - Returns a random dad joke, runnable once every 10 minutes. This command uses an API, <a href="#api-credits">see below</a> for credit links.
+					%aiqa ["Wikipedia page name in quotes"] [question] - Gets the Wikipedia page, then runs it through an API-based AI to answer your question. It's probably wrong. Aliases for %aiqa are %ask and %igotaquestion. This command uses an API, <a href="#api-credits">see below</a> for credit links.
 					<br><br>
-					%say [message] - Sends a message as Barbara. If you're not an admin, it mentions who the message is by.
+					%dadjoke – Returns a random dad joke, runnable once every 10 minutes. This command uses an API, <a href="#api-credits">see below</a> for credit links.
 					<br><br>
-					%say button [buttonURL] [buttonTitle] [message] - Sends a message as Barbara with a button at the bottom that takes you to a URL. If you're not an admin, it mentions who the message is by.
+					%say [message] – Sends a message as Barbara. If you're not an admin, it mentions who the message is by.
 					<br><br>
-          %link - Displays a customizable message when the command is run.
+					%say button [buttonURL] [buttonTitle] [message] – Sends a message as Barbara with a button at the bottom that takes you to a URL. If you're not an admin, it mentions who the message is by.
 					<br><br>
-					%howoldis [theserver/barbara] <​accurately/precisely> - Return the age of the server/barbara
+					%screenshot [link] <​fullPage> <​scrollBy> <​width> <​height> – Screenshot a website.
 					<br><br>
-					%invite - Invite Barbara to your Discord Server!
+					%prompt [prompt] - Continues your prompt and writes a paragraph with it, using the same API that runs %aiqa. This command uses an API, <a href="#api-credits">see below</a> for credit links. An alias for this command is %textgen. WARNING: GPT-Neo was trained on the Pile, a dataset known to contain profanity, lewd, and otherwise abrasive language.
+					<br><br>
+          %link – Displays a customizable message when the command is run. Aliases for this command are %about and %info.
+					<br><br>
+					%howoldis [theserver/barbara/@user] <​accurately/precisely> – Return the age of the server/barbara
+					<br><br>
+					%invite – Invite Barbara to your Discord Server!
 					<br><br><br>
 					[parameter] = required
 					<br>
@@ -58,28 +64,38 @@
         <a id="admin" class="titlelink"><h2>Admin Commands.</h2></a>
 				<h3>The following commands only work for server owners and people they allow (and the JCWYT team 😉).</h3>
 				<p>
+					<h4>General Admin Commands</h4>
+					%messages purge <​limit> <​user> - Deletes up to <​limit> messages from the current channel (if not set, it defaults to 50), optionally from <​user> (if not set, deletes all messages). This command's aliases are %messages wipe and %messages clear.
+					<br><br>
+					%messages collect <​limit> <​user> - Collects up to <​limit> messages from the current channel into a .csv file (if not set, it defaults to 50), optionally from <​user> (if not set, collects all messages). This command's aliases are %messages aquire and %messages gather.
 					<h4>Admin Role Commands</h4>
-          %admin list roles - Lists roles that can use admin commands.
+					%admin list all, %admin = all – Lists both admin roles and users.
 					<br><br>
-          %admin list users - Lists users that can use admin commands.
+          %admin list roles, %admin = roles – Lists roles that can use admin commands.
 					<br><br>
-          %admin add role [@role] - Adds role to admin command whitelist.
+          %admin list users, %admin = users – Lists users that can use admin commands.
 					<br><br>
-          %admin add user [@user] - Adds user to admin command whitelist.
+          %admin add role [@role], %admin + role [@role] – Adds role to admin command whitelist.
 					<br><br>
-          %admin remove role [@role] - Removes role from admin command whitelist.
+          %admin add user [@user], %admin + user [@user] – Adds user to admin command whitelist.
 					<br><br>
-          %admin remove user [@user] - Removes user from admin command whitelist.
+          %admin remove role [@role], %admin - role [@role] – Removes role from admin command whitelist.
+					<br><br>
+          %admin remove user [@user], %admin - user [@user] – Removes user from admin command whitelist.
 					<br><br>
 					<h4>Server Customization</h4>
-          %link set [message or link] - Customizes the link in %link. Add as many as you want.
+          %link set [message or link] – Customizes the link in %link. Add as many as you want.
 					<br><br>
-          %prefix [new prefix] - Customize the prefix for all commands.
+          %prefix [new prefix] – Customize the prefix for all commands.
+					<br><br>
+					%vc ban-bots <​VC ID> - Bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
+					<br><br>
+					%vc unban-bots <​VC ID> - Un-bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
 					<br><br>
 					<h4>Advanced Server Customization</h4>
-					%config read - Reads the config as a JSON object. Currently, there aren't commands for many config values, so you'll have so look here to see them all.
+					%config read – Reads the config as a JSON object. Currently, there aren't commands for many config values, so you'll have so look here to see them all.
 					<br><br>
-					%config set [parameter] [value] - Set a parameter in config to the value you stated.
+					%config set [parameter] [value] – Set a parameter in config to the value you stated.
 					<br><br><br>
 					[parameter] = required
 					<br>
@@ -89,9 +105,11 @@
         <a id="api-credits" class="titlelink"><h2>API Credits</h2></a>
 				<h3>Here's the links to the APIs we use:</h3>
 				<p>
-					For our facts, we use <a href="https://uselessfacts.jsph.pl/"> uselessfacts.jsph.pl</a>.
+					For the Q&A, we use <a href="https://huggingface.co/">huggingface.co</a>
 					<br><br>
 					For our dad jokes, we use <a href="https://icanhazdadjoke.com/">icanhazdadjoke.com</a>.
+					<br><br>
+					For our facts, we use <a href="https://uselessfacts.jsph.pl/"> uselessfacts.jsph.pl</a>.
 				</p>
     </div>
     <hr class="phonespace">
