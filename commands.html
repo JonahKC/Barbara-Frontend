@@ -36,6 +36,8 @@
 					<br><br>
           %pickup – Responds with a random pickup line from a hand-curated list of 300+.
 					<br><br>
+					%pickup breakup – Responds with a random breakup line from an amazing list of 100+.
+					<br><br>
 					%fact – Returns a random fact. This command uses an API, <a href="#api-credits">see below</a> for credit links.
 					<br><br>
 					%aiqa ["Wikipedia page name in quotes"] [question] - Gets the Wikipedia page, then runs it through an API-based AI to answer your question. It's probably wrong. Aliases for %aiqa are %ask and %igotaquestion. This command uses an API, <a href="#api-credits">see below</a> for credit links.
@@ -46,28 +48,28 @@
 					<br><br>
 					%say button [buttonURL] [buttonTitle] [message] – Sends a message as Barbara with a button at the bottom that takes you to a URL. If you're not an admin, it mentions who the message is by.
 					<br><br>
-					%screenshot [link] <​fullPage> <​scrollBy> <​width> <​height> – Screenshot a website.
+					%screenshot [link] &lt;fullPage&gt; &lt;scrollBy&gt; <​width> <​height> – Screenshot a website.
 					<br><br>
-					%prompt <​length of answer> <​temperature> [prompt] - Continues your prompt and writes a paragraph with the length <​length of answer> (if not specified, it automatically chooses a good length, also <b>length of answer is NOT in characters, it's in AI tokens. Each AI token is about 0.75 <i>words</i>, so make sure you're not setting it too high!</b>) and`<​temperature> is the creativity (low values are boring, and really high valued are gibberish. temperature goes from 0-100).  This command uses an API, see below for credit links. <b>WARNING 2: GPT-Neo (the AI used to do this) was trained on the Pile, a dataset known to contain profanity, lewd, and otherwise abrasive language. USE AT YOUR OWN RISK</b>
+					%prompt &lt;length of answer&gt; &lt;temperature&gt; [prompt] - Continues your prompt and writes a paragraph with the length &lt;length of answer&gt; (if not specified, it automatically chooses a good length, also <b>length of answer is NOT in characters, it's in AI tokens. Each AI token is about 0.75 <i>words</i>, so make sure you're not setting it too high!</b>) and &lt;temperature&gt; is the creativity (low values are boring, and really high valued are gibberish. temperature goes from 0-100).  This command uses an API, see below for credit links. <b>WARNING 2: GPT-Neo (the AI used to do this) was trained on the Pile, a dataset known to contain profanity, lewd, and otherwise abrasive language. USE AT YOUR OWN RISK</b>
 					<br><br>
           %link – Displays a customizable message when the command is run. Aliases for this command are %about and %info.
 					<br><br>
-					%howoldis [theserver/barbara/@user] <​accurately/precisely> – Return the age of the server/barbara
+					%howoldis [theserver/barbara/@user] &lt;accurately/precisely&gt; – Return the age of the server/barbara
 					<br><br>
 					%invite – Invite Barbara to your Discord Server!
 					<br><br><br>
 					[parameter] = required
 					<br>
-					<​parameter> = optional
+					&lt;parameter> = optional
 				</p>
       <hr class="wideline">
         <a id="admin" class="titlelink"><h2>Admin Commands.</h2></a>
 				<h3>The following commands only work for server owners and people they allow (and the JCWYT team 😉).</h3>
 				<p>
 					<h4>General Admin Commands</h4>
-					%messages purge <​limit> <​user> - Deletes up to <​limit> messages from the current channel (if not set, it defaults to 50), optionally from <​user> (if not set, deletes all messages). This command's aliases are %messages wipe and %messages clear.
+					%messages purge &lt;limit&gt; &lt;user&gt; - Deletes up to &lt;limit&gt; messages from the current channel (if not set, it defaults to 50), optionally from <​user> (if not set, deletes all messages). This command's aliases are %messages wipe and %messages clear.
 					<br><br>
-					%messages collect <​limit> <​user> - Collects up to <​limit> messages from the current channel into a .csv file (if not set, it defaults to 50), optionally from <​user> (if not set, collects all messages). This command's aliases are %messages aquire and %messages gather.
+					%messages collect &lt;limit&gt; &lt;user&gt; - Collects up to &lt;limit&gt; messages from the current channel into a .csv file (if not set, it defaults to 50), optionally from &lt;user&gt; (if not set, collects all messages). This command's aliases are %messages aquire and %messages gather.
 					<br><br>
 					%reaction add [emoji] - Reacts to the previous message with the emoji of your choice. Seperate emoji with commas to do multiple at once.
 					<br><br>
@@ -92,9 +94,9 @@
 					<br><br>
           %prefix [new prefix] – Customize the prefix for all commands.
 					<br><br>
-					%vc ban-bots <​VC ID> - Bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
+					%vc ban-bots &lt;VC ID&gt; - Bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
 					<br><br>
-					%vc unban-bots <​VC ID> - Un-bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
+					%vc unban-bots &lt;VC ID&gt; - Un-bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
 					<br><br>
 					<h4>Advanced Server Customization</h4>
 					%config read – Reads the config as a JSON object. Currently, there aren't commands for many config values, so you'll have so look here to see them all.
@@ -103,7 +105,7 @@
 					<br><br><br>
 					[parameter] = required
 					<br>
-					<​parameter> = optional
+					&lt;parameter&gt; = optional
 				</p>
      <hr class="wideline">
         <a id="api-credits" class="titlelink"><h2>API Credits</h2></a>
