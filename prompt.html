@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>%prompt | Barbara</title>
+    <meta name="description" content="Barbara is an old lady Discord bot developed by JCWYT!">
+    <meta property="og:image" content="https://barbara.jcwyt.com/barbara_black.png">
+    <meta name="keywords" content="jc, wyt, inc, jonah, callum, seattle, code, coding, coders, projects, waste, your, time, stupid, ideas, barbara, bot, ai, chat, talk, discord">
+    <meta name="robots" content="noindex, follow">
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,     initial-scale=1.0">
+      <link rel="icon" href="barbara_black.png">
+      <link rel="canonical" href="https://barbara.jcwyt.com/api-credits">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+    <body>
+    <script src="script.js"></script>
+    <div class="center">
+        <a class="titlelink" href="./index.html">
+          <img class="logo" src="barbara.png" alt="Logo" width="200" height="200">
+        </a>
+      <h1>Barbara's %prompt command, and how to get the AI to do what you want:</h1>
+    </div> 
+    <hr class="space">
+    <p style="background-color: rgba(0, 0, 0, 0.6);padding: 10px;">Transformers:
+Barbara's AI is an autoregressive transformer, trained on The Pile: a diverse dataset of 800+ gigabytes of natural, unprocessed text from the internet. A transformer is a type of neural network that generates output one word at a time by predicting the next word, so if you give it the string "Hi my name is" it'll run it through the network, and decide that a name should be the next word.
+
+Temperature:
+Now, it knows millions of names, but the way it'll decide on just one name is based on how many times it shows up in the training data (for example, if the name John appears in the training data 10,000 times but Sophronia only appears 200 times, it'll choose John over Sophronia). Now this is great, but if you're trying to get her to spit out a creative name, doesn't work. This is where <em>temperature<em> comes in. Here's the syntax for the command: <code style="display: inline;">%prompt [max-tokens] [temperature] [optional newline] [actual text]</code>. Temperature is just randomness, it makes the likelihood for Sophronia to be chosen closer to the likelihood of John being chosen. This means that instead of just using the most likely next word, Barbara will diversify. When writing creative text, or something where the most likely word isn't the best one, you'll want to use higher values for creativity. My recommendation is to keep within 0-1.5 although technically you can go up to 100 (almost every word has equal probability).</p>
+    <p style="background-color: rgba(0, 0, 0, 0.6);padding: 10px;">Zero/One/Multi-Shot Learning:
+Now we're talking about the actual text you give Barbara as a prompt. I think the best way to describe zero-shot, one-shot, and multi-shot learning is with some examples:
+Zero-Shot Prompt:
+<br /><code>
+Write the following passage in grammatically correct English:<br />
+Passage: me like doughnuts<br />
+Grammatical English:
+</code><br />
+One-Shot Prompt:
+<br /><code>
+Write the following passage in grammatically correct English:<br />
+Passage: me like doughnuts<br />
+Grammatical English: I like doughnuts<br />
+Passage: friends with me will you be?<br />
+Grammatical English:
+</code><br />
+Multi-Shot Prompt:
+<br /><code>
+Write the following passage in grammatically correct English:<br />
+Passage: me like doughnuts<br />
+Grammatical English: I like doughnuts<br />
+Passage: friends with me will you be?<br />
+Grammatical English: Will you be friends with me?<br />
+Passage: named-me is Jiano<br />
+Grammatical English: My name is Jiano<br />
+Passage: Is not you happy?<br />
+Grammatical English: Aren't you happy?<br />
+Passage: Me is very epic say you wouldn't?<br />
+Grammatical English:
+</code><br />
+
+In general, multi-shot is better solely because Barbara will understand what you want her to do better.
+ANOTHER THING TO NOTE: For this, you would set the temperature to 0, because you don't want Barbara to be creative, you want her to accurately make the sentence gramatical</p>
+    <hr class="space">
+    <hr class="phonespace">
+    <hr class="phonespace">
+    <hr class="phonespace">
+    </body>
+  <footer>
+    <hr class="wideline">
+    <div class="stupidfooter">
+      <p>Made by <a href="https://jcwyt.com">jcwyt.com</a></p>
+    </div>
+    <br>
+  </footer>
+</html>

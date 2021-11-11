@@ -12,6 +12,12 @@ a {
   text-decoration: underline;
   color: rgb(250, 220, 230);
 }
+
+code {
+  background-color: rgba(6, 0, 59, 0.4);
+  margin: 2px;
+}
+
 img {
   user-drag: none; 
   user-select: none;
