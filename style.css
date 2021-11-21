@@ -136,3 +136,12 @@ button {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: rgb(250, 220, 230);
 }
+.box {
+  overflow: scroll;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  border: #000000 2px solid;
+  border-radius: 5px;
+  padding: 2%;
+}
