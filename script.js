@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
   }).then(response => {
     if (response) {
       response.text().then(text => {
-        statusElement.innerHTML = `Barbara is online and in ${text} servers.`;
+        statusElement.innerHTML = `Barbara online and on ${text} servers.`;
       });
     } else {
       statusElement.innerHTML = "Barbara is down.";
