@@ -145,3 +145,7 @@ button {
   border-radius: 5px;
   padding: 2%;
 }
+.commanddiv {
+  text-align: left;
+  margin: 0 10% 0 10%;
+}

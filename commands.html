@@ -1,126 +1,161 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Commands | Barbara</title>
-    <meta name="description" content="Barbara is an old lady Discord bot developed by JCWYT!">
-    <meta property="og:image" content="https://barbara.jcwyt.com/barbara_black.png">
-	  <meta name="robots" content="index, follow">
-    <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, 	initial-scale=1.0">
-	  <link rel="icon" href="barbara_black.png">
-	  <link rel="canonical" href="https://barbara.jcwyt.com/">
-	  <link href="style.css" rel="stylesheet" type="text/css" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWJ9CNMPC6"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
+
+<head>
+  <title>Barbara's Commands</title> <!-- Page Title -->
+  <link rel="icon" href="/barbara.png"> <!-- Favicon -->
+  <meta name="description" content="Barbara is an old lady Discord bot developed by JCWYT!"> <!-- Page Description -->
+  <meta name="robots" content="index, follow"> <!-- Index Preferences --> 
+  <link rel="canonical" href="https://barbara.jcwyt.com/commands"> <!-- Canonical Domain -->
+  <meta charset="UTF-8"> <!-- Unicode Type -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Screen Width --> 
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">  
+
+  <!-- Social Media Embeds -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://barbara.jcwyt.com/commands"> <!-- Canonical Domain -->
+  <meta property="og:title" content="Barbara's Commands"> <!-- Page Title -->
+  <meta property="og:description" content="Barbara is an old lady Discord bot developed by JCWYT!"> <!-- Page Description -->
+  <meta property="og:image" content="https://barbara.jcwyt.com/barbara.png"> <!-- Social Media Embed (ideally 16x9 ratio, and must be link) -->
+    
+  <meta name="theme-color" content="#d27ddc">
+  <link rel="apple-touch-icon" href="barbara.png">
+    
+  <!-- Special Twitter Embeds -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://barbara.jcwyt.com/commands"> <!-- Canonical Domain -->
+  <meta property="twitter:title" content="Barbara's Commands"> <!-- Page Title -->
+  <meta property="twitter:description" content="Barbara is an old lady Discord bot developed by JCWYT!"> <!-- Page Description -->
+  <meta property="twitter:image" content="https://barbara.jcwyt.com/barbara.png"> <!-- Social Media Embed (ideally 16x9 ratio, and must be link) -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWJ9CNMPC6">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
   		gtag('config', 'G-JWJ9CNMPC6');
-		</script>
-	</head>
-	<body>
-    <script src="script.js"></script>
-    <div class="center">
-		  <a class="titlelink" href="/">
-		  <img class="logo" src="barbara.png" alt="Logo" width="200" height="200">
-      <h1>Barbara</h1>
+	</script>
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+	<div class="center">
+		<a class="titlelink" href="/">
+			<img class="logo" src="barbara.png" alt="Logo" width="200" height="200">
       </a>
-	    </div>
-    <hr class="space">
-    <div class="center">
       <h1>All Commands</h1>
-      <hr class="wideline">
-        <h2>User Commands</h2>
-				<h3>The following commands work for all users.</h3>
-				<p>
-          %help – Displays all commands. An alias for this command is %h.
-					<br><br>
-					%help admin – Displays all admin commands (<a href="#admin">see below</a>). An alias is %h admin.
-					<br><br>
-					%vote - <a href="https://top.gg/bot/863912165757026304/vote">Vote for Barbara on Top.gg</a>!
-					<br><br>
-          %secret – Responds with a secret. There's currently 300+ secrets, all made by JCWYT!
-					<br><br>
-          %pickup – Responds with a random pickup line from a hand-curated list of 300+.
-					<br><br>
-					%breakup – Responds with a random breakup line from an amazing list of 100+.
-					<br><br>
-					%fact – Returns a random fact. This command uses an API, <a href="#api-credits">see below</a> for credit links.
-					<br><br>
-					%dadjoke – Returns a random dad joke. This command uses an API, <a href="#api-credits">see below</a> for credit links.
-					<br><br>
-					%say [message] – Sends a message as Barbara. If you're not an admin, it mentions who the message is by.
-					<br><br>
-					%say button [buttonURL] [buttonTitle] [message] – Sends a message as Barbara with a button at the bottom that takes you to a URL. If you're not an admin, it mentions who the message is by.
-					<br><br>
-					%screenshot [link] &lt;fullPage&gt; &lt;scrollBy&gt; &lt;​width&gt; &lt;​height&gt; – Screenshots a website. <b>This command is restricted to NSFW channels only.</b>
-					<br><br>
-					%prompt &lt;length of answer&gt; &lt;temperature&gt; [prompt] - Continues your prompt and writes a paragraph. <b>Length of answer is NOT in characters, it's in AI tokens, or about 0.75 <i>words</i> each, so make sure you're not setting it too high!</b>. To learn more about how to get the AI to say what you want, click <a href="prompt">here</a>. This command uses an API, see below for credit links.<br> <b>Content Warning: The AI used to do this was trained on a dataset known to contain profanity, lewd, and otherwise offensive language. Use at your own risk!</b>
-					<br><br>
-          %link – Displays a customizable message when the command is run. Aliases for this command are %about and %info.
-					<br><br>
-					%howoldis [theserver/barbara/@user] &lt;accurately/precisely&gt; – Return the age of the server/barbara
-					<br><br>
-					%invite – Invite Barbara to your Discord Server!
-					<br><br><br>
-					[parameter] = required
-					<br>
-					&lt;parameter> = optional
-				</p>
-      <hr class="wideline">
-        <a id="admin" class="titlelink"><h2>Admin Commands.</h2></a>
-				<h3>The following commands only work for server owners and people they allow (and the JCWYT team 😉).</h3>
-				<p>
-					<h4>General Admin Commands</h4>
-					%reaction add [emoji] - Reacts to the previous message with the emoji of your choice. Seperate emoji with commas to do multiple at once.
-					<br><br>
-					%reaction remove [emoji] - Unreacts from the previous message with the emoji of your choice. Seperate emoji with commas to do multiple at once.
-					<h4>Admin Role Commands</h4>
-					%admin list all, %admin = all – Lists both admin roles and users.
-					<br><br>
-          %admin list roles, %admin = roles – Lists roles that can use admin commands.
-					<br><br>
-          %admin list users, %admin = users – Lists users that can use admin commands.
-					<br><br>
-          %admin add role [@role], %admin + role [@role] – Adds role to admin command whitelist.
-					<br><br>
-          %admin add user [@user], %admin + user [@user] – Adds user to admin command whitelist.
-					<br><br>
-          %admin remove role [@role], %admin - role [@role] – Removes role from admin command whitelist.
-					<br><br>
-          %admin remove user [@user], %admin - user [@user] – Removes user from admin command whitelist.
-					<br><br>
-					<h4>Server Customization</h4>
-					%meesedetect [true/false] - Enables or disables Meese detection.
-						<br><br>
-          %link set [message or link] – Customizes the link in %link. Add as many as you want.
-					<br><br>
-          %prefix [new prefix] – Customize the prefix for all commands.
-					<br><br>
-					%vc ban-bots &lt;VC ID&gt; - Bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
-					<br><br>
-					%vc unban-bots &lt;VC ID&gt; - Un-bans bots from the VC you are currently in, or the VC specified by the ID of the VC (you can find IDs by enabling Discord Developer in settings, right-clicking on the VC and clicking Copy ID).
-					<br><br>
-					<h4>Advanced Server Customization</h4>
-					%config read – Reads the config as a JSON object. Currently, there aren't commands for many config values, so you'll have so look here to see them all.
-					<br><br>
-					%config set [parameter] [value] – Set a parameter in config to the value you stated.
-					<br><br><br>
-					[parameter] = required
-					<br>
-					&lt;parameter&gt; = optional
-				</p>
-     <hr class="wideline">
-        <a id="api-credits" class="titlelink"><h2>API Credits</h2></a>
-				<h3>Here's the links to the APIs we use:</h3>
-				<p>
-					To run GPT-Neo for %prompt, we use the <a href="https://huggingface.co/">Huggingface Accelerated Inference API</a>
-					<br><br>
-					For our dad jokes, we use the <a href="https://icanhazdadjoke.com/">i can haz dad joke API</a>.
-					<br><br>
-					For our facts, we use the <a href="https://uselessfacts.jsph.pl/">Random Useless Facts API</a>.
-				</p>
+	  </div>
+    <hr class="wideline">
+    <hr class="space">
+
+    <div class="commanddiv">    
+      <h2 class="center">User Commands</h2>
+      <br><br>
+       <p> 
+				/help - Replies with all commands and what they do.
+				<br><br>
+        /credits - Shows everyone who worked on Barbara and the APIs and resources we use!
+        <br><br>
+        /vote - <a href="https://top.gg/bot/863912165757026304">Vote for Barbara on Top.gg</a>!
+        <br><br>
+        /invite - Gives you a link to <a href="https://barbara.jcwyt.com/invite">invite Barbara to your Discord</a>!.
+        <br><br>
+        /pickup - Tells you a <i>>magnificent</i> pickup line from a handpicked list of over 500. Some of them you can respond to as well!
+        <br><br>
+        /breakup – Responds with a random breakup line from an amazing list of over 150.
+        <br><br>
+        /secret - I'll tell you a secret, straight from the JCWYT devs!
+        <br><br>
+        /prompt &lt;prompt&gt; &lt;length of answer&lt; &lt;temperature&lt; - Continues your prompt and writes a paragraph. Length of answer lets you adjust the output length and temperature affects the AI's creativity. To learn more about how to get the AI to say what you want, <a href="https://barbara.jcwyt.com/prompt">click here</a>.<br>
+        <b>Content Warning: The AI used is trained on the public internet, and is known for generating lewd, offensive, and other socially unacceptable content. Use at your own risk!</b>
+        <br><br>
+        /link – Displays a server-customizable message.
+        <br><br>
+        /say &lt;message&gt; - Sends a message as Barbara. If you're not an admin, it mentions who the message is by.
+        <br><br>
+        /age &lt;@user&gt; [precision: precise/imprecise] - Return the age of the a user, either broadly (like how many months), or exactly down to a tenth of a second.
+        <br><br>
+        /fact - Returns a random fact. This command uses an API, <a href="#credits">see below for credit links</a>.
+        <br><br>
+        /truth - Gives you a great Truth to ask in Truth or Dare. There's no /dare so stop asking (it might be coming soon though). 
+        <br><br>
+        /reaction add &lt;emoji&gt; - Reacts to the previous message with the emoji of your choice.
+        <br><br>
+
+        <h2 class="center">Admin Commands</h2>
+        <h4  class="center">The following commands only work for server administrators and people they allow.</h4>
+
+        <h3 class="center">General Admin Commands</h3>
+        <br><br>
+        /reaction clear - Removes all reactions from the previous message.
+        <br><br>
+
+        <h3 class="center">Admin Role Commands</h3>
+        <br><br>
+        /admin list all - Lists both admin roles and users.
+        <br><br>
+        /admin list roles - Lists roles that can use admin commands.
+        <br><br>
+        /admin list users - Lists users that can use admin commands.
+        <br><br>
+        /admin add role &lt;@role&gt; - Adds role to admin command whitelist.
+        <br><br>
+        /admin add user &lt;@user&gt; - Adds user to admin command whitelist.
+        <br><br>
+        /admin remove role &lt;@role&gt; - Removes role from admin command whitelist.
+        <br><br>
+        /admin remove user &lt;@user` - Removes user from admin command whitelist.
+        <br><br>
+        
+        <h3 class="center">Server Customization</h3>
+        <br><br>
+        /meesedetect &lt;true/false&gt; - Enables or disables Meese detection.
+        <br><br>
+        /log &lt;#channel&gt; - Logs meese detection deletions, message reacts, and other features that can be run anonymously to the channel of your choice.
+        <br><br>
+        /link &lt;link&gt; - Customizes the link in /link. Add as many as you want.
+        <br><br>
+        /vc ban [#vc] - Bans bots from the VC specified or from the VC you are currently in.
+        <br><br>
+        /vc unban [#vc] - Unans bots from the VC specified or from the VC you are currently in.
+        <br><br>
+
+        <h3 class="center">Advanced Server Customization</h3>
+        <h4 class="center">If you would like to edit other config, use these commands.</h4>
+        <br><br>
+        /config read [option&gt - Read the value of a config option, or all of config.
+        <br><br>
+        /config set &lt;option&gt; &lt;value&gt; - Set the value of a config option.
+        <br><br>
+        /config reset &lt;option&gt; - Reset a config option to the default value.
+        <br><br>
+        /config append &lt;option&gt; - Add an item to a config list.
+        <br><br>
+        /config remove &lt;option&gt; - Remove an item from a config list.
+        <br><br>
+
+        <h2 class="center" id="credits">Credits</h2>
+        <h4  class="center">Here's everyone who worked on the bot, and all of the APIs we currently use.</h4>
+        <br><br>
+        <b>Developers:</b><br>
+        • JCWYT Team (Jonah and Callum)<br>
+        • Josh<br>
+        <br><br>
+        <b>Lots of help from:</b><br>
+        • Emily<br>
+        • Nolan<br>
+        • Ryan<br>
+        • Phil<br>
+        • Caroline<br>
+        <br><br>
+        <b>APIs Used:</b><br>
+        • The AI we use for /prompt is the <a href="https://huggingface.co">Huggingface Accelerated Inference API</a>.<br>
+        • For our dad jokes, we use the <a href="https://icanhazdadjoke.com">i can haz dad joke API</a>.<br>
+        • For our facts, we use the <a href="https://uselessfacts.jsph.pl">Random Useless Facts API</a>.<br>
+      </p>
     </div>
     <hr class="phonespace">
 	</body>
