@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
     let statusElement = document.getElementById("status");
     let request = new XMLHttpRequest();
-    request.open('GET', "https://api.jcwyt.com/guilds");
+    request.open('GET', "https://jcwyt-api.replit.app/barbara/guilds");
     request.onerror = function(error) {
 
         // This is a bit confusing. A CORS error happens when the server is down
